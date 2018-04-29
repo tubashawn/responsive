@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,28 +11,40 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/images.css" />
     <script src="main.js"></script>
 </head>
+
 <body background="assets/images/funky-lines.png">
     <div class="content">
         <header>
-            <h1>Shawn Mangum</h1>
-            <div class="tabs">
-                <h4 class="bodytext links" id="about"><a class="underline" href="index.html">About</a></h4>
-                <h4 class="bodytext links" id="portfolio"><a class="underline" href="portfolio.html">Portfolio</a></h4>
-                <h4 class="bodytext links" id="contact"><a class="underline" href="contact.html">Contact</a></h4>
-            </div>
+            <p class="head">Shawn Mangum</p>
+            <ul class="tabs">
+                <li class="bodytext links" id="about">
+                    <a class="underline" href="index.html">About</a>
+                </li>
+                <li class="bodytext links" id="portfolio">
+                    <a class="underline" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="bodytext links" id="contact">
+                    <a class="underline" href="contact.html">Contact</a>
+                </li>
+            </ul>
         </header>
-        
+
         <section>
-            <div class="sectionbody personal">
+            <div>
                 <h2>Contact</h2>
+                <br>
                 <form>
-                    Name<br>
-                        <input type="text" name="name"><br>
-                    E-mail<br>
-                        <input type="text" name="email"><br>
-                    Message<br>
-                        <textarea name="message" rows="8" col="80"></textarea><br>
-                        <input type="submit">
+                    Name
+                    <br>
+                    <input type="text" name="name" placeholder="Name" class="formEntry">
+                    <br><br> E-mail
+                    <br>
+                    <input type="text" name="email" placeholder="your@email.here" class="formEntry">
+                    <br><br> Message
+                    <br>
+                    <textarea name="message" rows="8" col="80" placeholder="Enter your message here" class="formEntry"></textarea>
+                    <br><br>
+                    <input type="submit">
                 </form>
             </div>
         </section>
@@ -41,4 +54,5 @@
         <div id="copyright">Copyright &copy; 2018</div>
     </footer>
 </body>
+
 </html>

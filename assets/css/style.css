@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -15,14 +16,13 @@ body {
 header {
     background-color: #ffffff;
     border-bottom: 5px solid #cccccc;
-    
     height: 60px;
     position: relative;
-    top: 50%;
+    
 
 }
 
-h1 {
+.head {
     color: white;
     font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
     font-size: 28px;
@@ -32,7 +32,7 @@ h1 {
     background-color:#4aaaa5;
     width: 280px;
     text-align: center;
-    height: 100%;
+    height: 85%;
     font-weight: bold;
     display: flex;
     align-items: center; 
@@ -47,6 +47,9 @@ h2 {
     height: 40px;
     font-weight: bold;
     border-bottom: 3px #bbbbbb solid;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
 
 .tabs {
@@ -76,26 +79,10 @@ a {
     text-decoration: none;
     color: #bbbbbb;
 }
-#contact { 
-    float: right;
-    
-}
-
-#portfolio {
-    float: right;
-    border-right: 3px #999999 solid;
-}
-
-#about {
-    float: right;    
-    border-right: 3px #999999 solid;
-
-}
 
 .bodytext {
     color: #777777;
     font-family: 'Arial', 'Helvetica Neue', 'Helvetica', 'sans-serif';
-    
 }
 
 p {
@@ -105,39 +92,35 @@ p {
     padding: 5px;
 }
 
-
 .image {
     height: 150px;
     width: 170px;
     float: left;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    margin: 15px;
 }
 
 section {
     background-color: #ffffff;
-    border-color: #dddddd;
-    border-width: 2px;
-    border-style: solid;
-    height: 600px;
+    border: 2px #dddddd solid;
     width: 80%;
     position: relative;
     left: 10%;
-    top: 30px;
+    top: 25%;
     margin-bottom: 50px;
+    margin-top:50px;
 }
 
-.personal {
-    width: 95%;
+#port {
+    background-color: #ffffff;
+    border: 2px #dddddd solid;
+    width: 80%;
     position: relative;
-    left: 2.5%;
-    top: 5%;
+    left: 10%;
+    top: 25%;
+    margin-bottom: 50px;
+    margin-top:50px;
 }
 
-.sectionbody {
-    position: relative;
-    top: 40px;
-}
 
 
 .words {
@@ -145,7 +128,7 @@ section {
     top: -60px;
     left: -5%;
     background-color: #4aaaa5;
-    width: 110%;
+    width: 100%;
     text-align: center;
     font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
     color: #cccccc;
@@ -153,35 +136,22 @@ section {
     font-weight: bold;
 }
 
-.pic { 
-    margin: 20 75 0 0;
-}
-.hang {
+.hang, .rpg, .trivia, .rutgers, .rock {
     float: left;
     margin-right: 75px;
     margin-top: 30px;
+    line-height: 150%;
 }
 
-.rpg {
-    float: left;
-    margin-right: 75px;
-    margin-top: 30px;
+form {
+    margin: 15px;
+    width: 100%;
+    font-family: 'Georgia', 'Times New Roman', 'Times', 'serif';
 }
 
-.trivia {
-    float: left;
-    margin-right: 75px;
-    margin-top: 30px;
-}
-
-.rutgers {
-    float: left;
-    margin-right: 75px;
-}
-
-.rock {
-    float: left;
-    margin-right: 75px;
+.formEntry {
+    width: 92%;
+    
 }
 
 footer {
@@ -191,6 +161,7 @@ footer {
     border-top-color: #4aaaa5;
     border-style: solid;
     flex-shrink: 0;
+    
 }
 
 #copyright {
@@ -198,3 +169,60 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+@media screen and (max-width: 980px) {
+    header {
+    position: static;
+
+}
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        position: static;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        position: static;
+        margin: auto;
+    }
+
+    .head {
+        float: left;
+        color: white;
+        font-family: 'Georgia', 'Times', 'Times New Roman', 'serif';
+        font-size: 28px;
+        background-color:#4aaaa5;
+        font-weight: bold;
+        height: 100%;
+        width: 100%;
+        position: relative;
+        left: 0;
+        text-indent: 25%;
+    }
+
+    .tabs {
+        background-color: #ffffff;
+        color: #777777;
+        position: absolute;
+        right: 0;
+        top: 7%;
+        width: 100%;
+        display: flex;
+        align-items: center; 
+        border-bottom: 5px solid #cccccc;
+        margin-bottom: 5%;
+        text-indent: 20%;
+    }
+   
+
+    section {
+        margin-top: 16%;
+    }
+
+    
+  
+}
+
